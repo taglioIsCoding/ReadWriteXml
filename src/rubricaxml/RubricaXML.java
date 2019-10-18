@@ -19,7 +19,7 @@ public class RubricaXML {
     public static void main(String[] args) {
        String fileName = "xmlTest.xml";
 		//change here!
-		String path = "C:/Users/72873486/Desktop/";
+		String path = "./";
 		XmlWriter xmlWriter = new XmlWriter();
 		XmlReader xmlReader = new XmlReader();
 		
