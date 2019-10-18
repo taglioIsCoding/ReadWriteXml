@@ -22,7 +22,8 @@ public class RubricaXML {
 		String path = "./";
 		XmlWriter xmlWriter = new XmlWriter();
 		XmlReader xmlReader = new XmlReader();
-		
+		GUI gui = new GUI();
+                gui.doAll();
 		ArrayList<Student> students = new ArrayList<>();
 		//creating studants
 		Student student1 = new Student("Paulo", 25, false, "03011111");
