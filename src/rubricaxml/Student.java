@@ -12,13 +12,15 @@ package rubricaxml;
 public class Student {
     //Student atributes
 	private String name;
+        private String cognome;
 	private int age;
 	private boolean sex;//false= mele true= famele
         private String telNumber;
 	
 	//constructor
-	public Student(String name, int age, boolean sex, String telNumber){
+	public Student(String name,String cognome, int age, boolean sex, String telNumber){
 		this.name = name;
+                this.cognome=cognome;
 		this.age = age;
 		this.sex = sex;
                 this.telNumber=telNumber;
@@ -48,6 +50,16 @@ public class Student {
 		this.sex = sex;
 	}
 
+    public String getCognome() {
+        return cognome;
+    }
+
+    public void setCognome(String cognome) {
+        this.cognome = cognome;
+    }
+
+        
+        
     public void setTelNumber(String telNumber) {
         this.telNumber = telNumber;
     }

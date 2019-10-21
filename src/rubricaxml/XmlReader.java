@@ -44,6 +44,7 @@ public class XmlReader {
 					Element element = (Element) nNode; // convert the node to element
                                         System.out.println(element);
 					System.out.println("name: " + element.getElementsByTagName("Name").item(0).getTextContent());
+                                        System.out.println("Cognome: " + element.getElementsByTagName("Cognome").item(0).getTextContent());
 					System.out.println("Age: " + element.getElementsByTagName("Age").item(0).getTextContent());
 					System.out.println("Sex: " + element.getElementsByTagName("Sex").item(0).getTextContent());
                                         System.out.println("Number: " + element.getElementsByTagName("Number").item(0).getTextContent());
@@ -66,8 +67,12 @@ public class XmlReader {
 	public ArrayList<Student> deserializerStudent(String path, String fileName){
 		//the paht where the file will be store
 		String filePath = path+fileName;
+                
 		//Pull the file from the path and store him 
 		File file = new File(filePath);
+                
+                
+                
 		ArrayList<Student>students=new ArrayList<>();
 		Student student = null;
 		//creating a new intance of Document Build Factory
@@ -95,6 +100,7 @@ public class XmlReader {
 					//fill the student attributes
 					//syntax: get the element by his tag to return the text content
 					student.setName(element.getElementsByTagName("Name").item(0).getTextContent());
+                                        student.setCognome(element.getElementsByTagName("Cognome").item(0).getTextContent());
 					student.setAge(Integer.parseInt(element.getElementsByTagName("Age").item(0).getTextContent()) );
 					student.setSex(Boolean.parseBoolean(element.getElementsByTagName("Sex").item(0).getTextContent()));
                                         student.setTelNumber(element.getElementsByTagName("Number").item(0).getTextContent());

@@ -5,7 +5,15 @@
  */
 package rubricaxml;
 
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
@@ -20,17 +28,32 @@ public class RubricaXML {
        String fileName = "xmlTest.xml";
 		//change here!
 		String path = "./";
-		XmlWriter xmlWriter = new XmlWriter();
-		XmlReader xmlReader = new XmlReader();
-		GUI gui = new GUI();
+                
+                //start GUI
+                GUI gui = new GUI();
                 gui.doAll();
+                
+                
+		//controllo se esiste il file
+                File f = new File(fileName+path);
+                if(!f.exists()){
+                    System.out.println("Non c'e'");
+                    gui.createAllert();
+                }
+                
+                XmlWriter xmlWriter = new XmlWriter();
+		XmlReader xmlReader = new XmlReader();
+		
+                
+                
+                
 		ArrayList<Student> students = new ArrayList<>();
 		//creating studants
-		Student student1 = new Student("Paulo", 25, false, "03011111");
-		Student student2 = new Student("Jessica", 25, true, "0302222");
-		Student student3 = new Student("Icaro", 19 , false, "0303333333");
-		Student student4 = new Student("Ana", 67, true, "030444444");
-                Student student5 = new Student("Pezzott", 67, true, "030444444");
+		Student student1 = new Student("Paulo","Bello", 25, false, "03011111");
+		Student student2 = new Student("Jessica","Tranqillo", 25, true, "0302222");
+		Student student3 = new Student("Icaro", "Rossi",19 , false, "0303333333");
+		Student student4 = new Student("Ana","Bianchi", 67, true, "030444444");
+                Student student5 = new Student("Pezzott", "Verdi",67, true, "030444444");
 		students.add(student1);
 		students.add(student2);
 		students.add(student3);

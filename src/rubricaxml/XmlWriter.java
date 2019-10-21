@@ -27,6 +27,8 @@ import org.w3c.dom.Element;
  * @author 72873486
  */
 public class XmlWriter {
+   
+    
     public void serializerStudents(String path, String fileName, ArrayList<Student> listStudents){
 		String filePath = path+fileName;
 		Document dom;
@@ -84,7 +86,11 @@ public class XmlWriter {
 			//creating a new Element called Name
 			element = dom.createElement("Name");
 			element.appendChild(dom.createTextNode(student.getName()));
+                        currentElement.appendChild(element);
+                        
 			//made this new element be an child element of current element
+                        element = dom.createElement("Cognome");
+			element.appendChild(dom.createTextNode(student.getCognome()));
 			currentElement.appendChild(element);
 			element =dom.createElement("Age");
 			element.appendChild(dom.createTextNode(Integer.toString(student.getAge())));
