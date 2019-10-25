@@ -3,10 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/72873486/Desktop/ReadWriteXml-master/src/rubricaxml/RubricaXML.java</file>
-            <file>file:/C:/Users/72873486/Desktop/ReadWriteXml-master/src/rubricaxml/XmlWriter.java</file>
-            <file>file:/C:/Users/72873486/Desktop/ReadWriteXml-master/src/rubricaxml/GUI.java</file>
-            <file>file:/C:/Users/72873486/Desktop/ReadWriteXml-master/src/rubricaxml/XmlReader.java</file>
+            <file>file:/D:/Users/Lorenzo/Documents/NetBeansProjects/FatturaXML/src/fatturaxml/FatturaXML.java</file>
+            <file>file:/D:/Users/Lorenzo/Documents/NetBeansProjects/FatturaXML/src/fatturaxml/modificaFattura.java</file>
+            <file>file:/D:/Users/Lorenzo/Documents/NetBeansProjects/FatturaXML/src/fatturaxml/gestioneFatture.java</file>
+            <file>file:/D:/Users/Lorenzo/Documents/NetBeansProjects/FatturaXML/src/fatturaxml/CreazioneFattura.java</file>
+            <file>file:/D:/Users/Lorenzo/Documents/NetBeansProjects/FatturaXML/src/fatturaxml/JFrame3.java</file>
+            <file>file:/D:/Users/Lorenzo/Documents/NetBeansProjects/FatturaXML/src/fatturaxml/Inizio.java</file>
+            <file>file:/D:/Users/Lorenzo/Documents/NetBeansProjects/FatturaXML/src/fatturaxml/eliminaFattura.java</file>
+            <file>file:/D:/Users/Lorenzo/Documents/NetBeansProjects/FatturaXML/src/fatturaxml/Continua.java</file>
+            <file>file:/D:/Users/Lorenzo/Documents/NetBeansProjects/FatturaXML/src/fatturaxml/Inizio1.java</file>
+            <file>file:/D:/Users/Lorenzo/Documents/NetBeansProjects/FatturaXML/src/fatturaxml/Avviso.java</file>
         </group>
     </open-files>
 </project-private>
